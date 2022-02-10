@@ -37,7 +37,7 @@
   },
   "scripts": {
     "start": "start-storybook -p 6006",
-    "build": "build-storybook",
+    "build": "yarn clean && tsc && yarn copy-files",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
     "clean": "rimraf dist/",
